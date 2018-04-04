@@ -1,0 +1,93 @@
+<% include partials/header %>
+<main class="main-container">
+            
+    <section class="page__header">
+        <a href="/"><h2 class="header2 page__header__header2">Berelli Immobiliare</h2></a>
+        <h1 class="header1 page__header__header1">Contatti</h1>
+        <p class="page__header__text header3">
+            Hai domande sull'azienda o sugli innumerevoli servizi in ambito immobiliare? Ti serve supporto?
+        </p>
+    </section>
+
+    <section class="contacts">
+        <div class="contacts__details">
+            <h3 class="header3 contacts__details__address">
+                Berelli Immobiliare<br>Viale del lavoro 312<br>20100 - Milano (MI)
+            </h3>
+            <a href="tel:02677432" class="header5 dotted-link contacts__details__tel">
+                <span>T</span> 02 677 432
+            </a>
+            <br>
+            <a href="tel:02677439" class="header5 dotted-link contacts__details__tel">
+                <span>F</span> 02 677 439
+            </a>
+            <div class="contacts__details__social">
+                <ul class="contacts__details__social__list">
+                    <li class="contacts__details__social__item">
+                        <a href="#" class="contacts__details__social__link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="contacts__details__social__item">
+                        <a href="#" class="contacts__details__social__link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="contacts__details__social__item">
+                        <a href="#" class="contacts__details__social__link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>      
+                    <li class="contacts__details__social__item">
+                        <a href="#" class="contacts__details__social__link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>                                               
+                </ul>
+            </div>
+        </div>
+
+        <div class="contacts__form">
+            <h3 class="header3 contacts__details__address">
+                Compilando il form sottostante si verrà contattati da un nostro agente quanto prima.
+            </h3>
+
+            <form action="#" class="popup__form contacts__form__container">
+                    <div class="popup__form__group">
+                        <input type="text" class="popup__form__input popup__form__input-black" id="name" placeholder="Nome*" required>
+                        <label for="name" class="popup__form__label">Nome</label>
+                    </div>
+                    <div class="popup__form__group">
+                        <input type="text" class="popup__form__input popup__form__input-black" id="surname" placeholder="Cognome*" required>
+                        <label for="surname" class="popup__form__label">Cognome</label>
+                    </div>
+                    <div class="popup__form__group">
+                        <input type="text" class="popup__form__input popup__form__input-black" id="tel" placeholder="Telefono">
+                        <label for="tel" class="popup__form__label">Telefono</label>
+                    </div>
+                    <div class="popup__form__group">
+                        <input type="email" class="popup__form__input popup__form__input-black" id="email" placeholder="E-mail*" required>
+                        <label for="email" class="popup__form__label">E-mail</label>
+                    </div>
+                    <button type="submit" class="popup__form__submit">Invia</button>
+                </form>
+        </div>
+    </section>
+
+    <section class="info">
+        <a href="/developments" class="feat__card feat__card-simple">
+            <div class="feat__card-img">
+                <img srcset="img/sviluppo-small.jpg 1440w, img/sviluppo.jpg 3000w" alt="Sviluppo Image"
+                    sizes="(max-width: 48.75em) 100vw, (min-width: 48.76em) 87vw, 1000px" 
+                    src="img/sviluppo.jpg">
+            </div>
+            <div class="feat__card-content">
+                <div class="feat__card-content-header">
+                    <h2 class="header3">Nuovi sviluppi</h2>
+                    <h3 class="header4">Berelli Imm. sta attualmente lavorando a nuovi cantieri per agglomerati familiari di livello</h3>
+                </div>
+            </div>
+        </a>   
+    </section>
+</main>
+<% include partials/footer %>
