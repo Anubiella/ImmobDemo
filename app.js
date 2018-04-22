@@ -1,8 +1,10 @@
 let express = require('express');
 let app = express();
+let compression = require('compression');
 
 const port = process.env.PORT || 3000;
 
+app.use(compression());
 app.use(express.static(__dirname + "/public"));
 app.set('view engine', 'ejs');
 
@@ -27,7 +29,7 @@ app.get('/contact', (req, res) => {
 });
 
 app.get('*', (req, res)=>{
-    res.redirect('back');
+    res.status(404).render('404');
 });
 
 app.listen(port, ()=>{
